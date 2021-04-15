@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="shortcut icon" type="image/png" href="logo/logo.png" />
+	<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body><center>
+
+<div class="topnav">
+	<a href="index.php"><h9>Home</h9></a>
+	<a title="The catalogue offers search option via author, book or publication name to help you in finding your desired books." href="books.php">Library Books</a>
+	<a title="Obtain & search digital copies of your books" href="dig.php">Digitised Book</a>
+	<a title="The issued books can be seen in the list by placing your ID." href="issue.php">Issued Books</a>
+	<a title="If any problem occur then you can contact with us" href="contact.php">Contact Us</a>
+	<a title="Request for registration for membership" href="user_reg.php">Registration</a>
+	<a title="logout" href="mem_log.php">LogIn/LogOut</a>
+</div>
+
+<br><div class="row">
+	<div class="column side">
+	<?php
+	include('ADMIN/connection.php');
+	include('styles.css');
+			$sql = "SELECT * FROM notice";
+			$result = $conn->query($sql);
+			$count=$result->num_rows;
+			if ($count > 0)
+			{
+				// output data of each row
+				echo "<h9><br>~Notice Board~</h9><br><marquee direction=up scrollamount=2 height=545><font color=white>";
+				while($row = $result->fetch_assoc())
+				{
+					echo "<center><p>".$row["description"]."<br>(updated by ".$row["date"].")</p><br>";
+				}
+				echo "</marquee></td></tr></table>";
+			}
+			else
+			{
+				echo "0 records";
+			}
+			$conn->close();
+	?>
+	</div>
+
+	<div class="column middle"><center>
+		<H1><img src="logo/logo.png" style="width:150px;height:150px;"><br>
+		<font face="Lucida Calligraphy">TASSS LIBRARY</H1></font>
+		<p><font color=white>
+		<div style="height:350px;overflow:scroll;padding:5px;">
+			<b>Books play an important role in our life. Books are our friends in a real sense. They demand nothing from us. They give us plenty of joy.</b>
+			<p><div id="slider"></div>
+			<p><video width="500" height="285" src="logo/vid.webm" type="video/webm" controls>Your browser does not support the video tag</video>
+			<br><a href="ADMIN/index.php" target="blank">Admin_login()</a>
+		</div>
+	</div>
+  
+	<div class="column side">
+		<h9><br><font color=yellow>~ Rules and Regulation ~</h9>
+		<marquee scrollamount="2" direction="up" height="545" align="middle"/>
+		<font color="white">
+			<p align=center>Library timings : Monday to Friday 10:50 AM - 05:10 PM</p><br>
+			<p align=center>Don't speak loudly in Library</p><br>
+			<p align=center>Don't use mobile phone in Library</p><br>
+			<p align=center>After scheduled time the borrowed book must be returned, else you'll have to pay Rs.10 every week.</p><br>
+			<p align=center>Don't misbehave with librarian or any student.</p><br>
+			<p align=center>You can due maximum three books.</p><br>
+		</font></marquee>
+		</table>
+	</div>
+	
+</div>
+
+<footer>SHARE:<BR>
+	<a href="https://www.facebook.com/sharer/sharer.php?u=tassslibrary.000webhostapp.com/">
+		<img src="logo/footer/facebook.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="https://twitter.com/home?status=tassslibrary.000webhostapp.com/">
+		<img src="logo/footer/twitter.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="https://plus.google.com/share?url=tassslibrary.000webhostapp.com/">
+		<img src="logo/footer/google+.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=tassslibrary.000webhostapp.com/&title=&summary=&source=">
+		<img src="logo/footer/linkedin.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="https://pinterest.com/pin/create/button/?url=tassslibrary.000webhostapp.com/&media=tassslibrary.000webhostapp.com/&description=">
+		<img src="logo/footer/pinterest.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="mailto:?&subject=TASSS Library&body=http%3A//tassslibrary.000webhostapp.com">
+		<img src="logo/footer/gmail.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="whatsapp://send?text=http://tassslibrary.000webhostapp.com/" data-action="share/whatsapp/share">
+		<img src="logo/footer/whatsapp.png" id="footericon"></a><br>
+	<a target="_blank" href="http://app.appsgeyser.com/6957448/TASSS%20Library">
+		<img src="logo/footer/android.png" id="footericon"></a><br>
+	 &copy; 2017-<?php echo date("Y");?> TasssLibrary. All rights reserved.<br>
+</footer>
+<audio src="audio/voice.mp3" autoplay></audio>
+</body>
+</html>

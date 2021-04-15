@@ -1,0 +1,3 @@
+Assignment 7
+1. Design a comprehensive web based HTML tutorial containing different HTML tags, their descriptions, usage in coding, & sample output.
+   Use standard & proper styling of the pages using CSS whereever necessary.

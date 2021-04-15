@@ -1,0 +1,63 @@
+$a = 23;  
+if( $a %2==0 ){  
+    printf "Even Number\n";  
+}
+else{
+    printf "Odd Number\n"; 
+}
+
+
+
+
+
+$a = 19; #manual input
+$div = $a / 2;
+my @a = (2..$div);
+$result = 0;
+
+for my $i (@a){
+    if( ($a % $i) == 0 ){
+        $result = 2;
+        last;
+    }
+}
+if($result){
+    printf "No, it's not a prime no.:/\n"; 
+}
+else{
+    printf "Yes , it's a prime no.:)\n"; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+$in = 4; #manual input
+my @a = (2..$in);
+$res = 1;
+for my $i (@a){
+    $res *= $i;
+}
+printf "Fact: $res\n"; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

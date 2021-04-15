@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>User Registration</title>
+		
+	</head>
+
+	<body>
+		
+<center>
+		<img src="logo.jpg" width="100px" height="90px"><br>
+		<H1>Welcome to Registration Page</H1>
+
+
+
+		<form enctype="multipart/form-data" method="POST"><br>
+		<H3>Personal Details</H3>
+			<FONT COLOR=RED>*All fields in this form are mandatory</FONT>
+			<p><input type="text" name="name" placeholder="Candidate's Name" maxlength="50" minlength="5"/>
+			<p>Gender : 
+			<input type="radio" name="gender" value="male"> Male
+			<input type="radio" name="gender" value="female"> Female
+			<input type="radio" name="gender" value="other"> Other 
+			<p><input type="text" name="father" placeholder="Father's Name" maxlength="50" minlength="5"/>
+			<p><input type="text" name="mother" placeholder="Mother's Name" maxlength="50" minlength="5"/>
+			<p>Date of Birth :<br><input type="date" name="dob"/>
+			<p><input type="text" name="aadhar" placeholder="Aadhar Number" maxlength="12" minlength="12"/>
+			<p><input type="text" name="phone" placeholder="Mobile Number" maxlength="12" minlength="8"/>
+			<p><input type="text" name="mail" placeholder="Email ID" maxlength="50" minlength="8"/>
+			<p><input type="text" name="user_name" placeholder="User Name" maxlength="20" minlength="3"/>
+			<p><input type="password" name="password" placeholder="Password" maxlength="20" minlength="8"/>
+			<p>Upload your Photo : <input type="file" name="image"/> <br> (i) File size must be less than = 100kb <br>(ii) Supported format - JPG PNG JPEG
+			<br>
+			<p>Upload your CV : <input type="file" name="image"/> <br> (i) File size must be less than = 1MB <br>(ii) Supported format - PDF<br>
+		</form><br>
+
+		<form enctype="multipart/form-data" method="POST"><br>
+		<H3>Academic Details</H3>
+			<p><input type="text" placeholder="Degree" />
+			<p><input type="text" placeholder="Institute" />
+			<p><input type="text" placeholder="Percentage" />
+			<p><input type="text" placeholder="Passing Year"/>
+		</form><br>
+
+
+	<form enctype="multipart/form-data" method="POST"><br>
+		<H3>Work Experience</H3>
+			<p><input type="text" placeholder="Organisation" />
+			<p><input type="text" placeholder="Position" />
+			<p><input type="text" placeholder="Duration" />
+			<p><input type="text" placeholder="Activities"/>
+			<p><input type="text" placeholder="Industrial Exposure"/>
+			<p><input type="text" placeholder="Job Responsibility"/>
+		</form><br>
+
+
+	<form enctype="multipart/form-data" method="POST"><br>
+		<H3>Project Information</H3>
+			<p><input type="text" placeholder="Project Title" />
+			<p><input type="text" placeholder="Project Description" />
+			<p><input type="text" placeholder="Role" />
+			<p><input type="text" placeholder="Duration"/>
+			<p><input type="text" placeholder="Team Size"/>
+		</form><br>
+
+	<form enctype="multipart/form-data" method="POST"><br>
+		<H3>Reference Information</H3>
+			<p><input type="text" placeholder="Name of Person" />
+			<p><input type="text" placeholder="Reference's Designation" />
+			<p><input type="text" placeholder="Reference's Organisation" />
+			<p><input type="text" placeholder="Email"/>
+			<p><input type="text" placeholder="Description"/>
+		</form><br>
+
+	<form enctype="multipart/form-data" method="POST"><br>
+		<H3>More info:</H3>
+			<p><input type="text" placeholder="Skills" />
+			<p><input type="submit" value="add new"/>
+			<p><input type="text" placeholder="Interest" />
+			<p><input type="submit" value="add new"/>
+			<p><input type="text" placeholder="Hobbies" />
+			<p><input type="submit" value="add new"/>
+			<p><input type="text" placeholder="Strength" />
+			<p><input type="submit" value="add new"/>
+			<p><input type="text" placeholder="Achievements" />
+			<p><input type="submit" value="add new"/>
+		</form><br>
+
+
+
+	<form enctype="multipart/form-data" method="POST"><br>
+		<H3>Objective & Declaration</H3>
+			<p><input type="text" placeholder="Objective" />
+			<p><input type="text" placeholder="Declaration"/>
+		</form><br>
+
+
+
+			<p><input type="submit" name="submit" value="SUBMIT"/>
+			<input type="submit" name="reset" value="RESET"/><br><br>
+		</center>
+	</body>
+</html>

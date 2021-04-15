@@ -1,0 +1,9 @@
+1. Create an HTML form containing a textfield called “Name”, another textfield called ”Password” and a submit button. 
+   Perform the following validation checkings:
+   a) Name field cannot be left blank.
+   b) Password must be at least six characters long.
+      The validation checkings should be performed when submit button is clicked.
+
+2. Create an HTML form with a password field and a retype password field. If both the passwords are not matching then 
+   show an alert message “passwords are not matching” otherwise display “passwords are OK”. The validation checkings 
+   should be performed when submit button is clicked.

@@ -1,0 +1,5 @@
+1.Create a webpage which will contain some message clicking on which the message will get changed to some other message.
+
+2. Create a webpage that will contain some button which on clicking will display "Hello World !!!".
+
+3. Create a webpage that will contain a registration form with a submit button which on clicking will display a welcome message.

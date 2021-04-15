@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>validation checkings</title>
+	</head>
+
+	<body>
+	<center>
+		<H1>validation checkings</H1>
+		<p><input id="name" type="text" name="name" placeholder="Name"/>
+		<p><input id="password" type="password" name="password" placeholder="Password" />
+		<p><input type="submit" name="submit" value="Submit" onclick="myFunction(this)" /><br><br>
+	</center>
+
+	<script>
+		function myFunction(element) {
+			var name = document.getElementById("name").value;
+			var password = document.getElementById("password").value;
+			if((name=="") || (password.length<6)){
+				alert( "Validation Failed" );
+			}
+			else{
+				alert( "Validation Passed" );
+			}
+		}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+1. Create a tribute page of someone you admire in your life. Make a webpage writing about that person adding his/her image. On the top 
+   of the webpage, add the image and name of the person and below that give layout for the rest of the details. You can use paragraphs, 
+   lists, links, images with CSS to give it a decent look. Add a suitable background color and font style on your webpage.
+
+2. You can make a static page holding an event or conference. People who are interested in attending the conference create a register 
+   button for them. Mention different links for speaker, venue and schedule at the top in the header section. Describe the purpose of 
+   the conference or the category of people who can get benefit from this conference. Add an introduction and images of the speaker, 
+   venue detail and the main purpose of the conference on your webpage. Divide the page into sections, add header and footer showcasing 
+   the menu. Use proper background color that can go well with each other for various sections. Choose a decent font style and font color 
+   that matches the theme of your web page. 

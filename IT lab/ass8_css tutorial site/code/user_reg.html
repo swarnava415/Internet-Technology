@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>User Registration</title>
+		<link rel="shortcut icon" type="image/png" href="logo.png" />
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+	<FONT COLOR=white>
+		<center><br><br><br>
+
+		<img src="signup.png" width="100px" height="90px"><br>
+		<H1>Welcome to Registration Page</H1>
+
+		<form enctype="multipart/form-data" method="POST"><br>
+			<FONT COLOR=RED>*All fields in this form are mandatory</FONT>
+			<p><input type="text" name="name" placeholder="Candidate's Name" maxlength="50" minlength="5"/>
+			<p>Gender : 
+			<input type="radio" name="gender" value="male"> Male
+			<input type="radio" name="gender" value="female"> Female
+			<input type="radio" name="gender" value="other"> Other 
+			<p><input type="text" name="father" placeholder="Father's Name" maxlength="50" minlength="5"/>
+			<p><input type="text" name="mother" placeholder="Mother's Name" maxlength="50" minlength="5"/>
+			<p>Date of Birth :<br><input type="date" name="dob"/>
+			<p><input type="text" name="aadhar" placeholder="Aadhar Number" maxlength="12" minlength="12"/>
+			<p><input type="text" name="phone" placeholder="Mobile Number" maxlength="12" minlength="8"/>
+			<p><input type="text" name="mail" placeholder="Email ID" maxlength="50" minlength="8"/>
+			<p><input type="text" name="user_name" placeholder="User Name" maxlength="20" minlength="3"/>
+			<p><input type="password" name="password" placeholder="Password" maxlength="20" minlength="8"/>
+			<p>Upload your Photo : <input type="file" name="image"/> <br> (i) File size must be less than = 100kb <br>(ii) Supported format - JPG PNG JPEG
+			<p><input type="submit" name="submit" value="SUBMIT"/><br><br>
+		</form><br>
+
+		</FONT>
+	</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>CSS Tutorial</title>
+	<link rel="shortcut icon" type="image/png" href="logo/logo.png" />
+	<style>
+	<style>
+
+/* animation for H1 */
+H1
+{
+    background-color: transparent;
+    animation-duration: 10s;
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column
+{
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side{width: 25%;}
+
+/* Middle column */
+.column.middle{width: 50%;}
+
+*{box-sizing: border-box;}
+
+/* Clear floats after the columns */
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ /* Style the top navigation bar */
+.topnav
+{
+    background-color: transparent;
+    background: rgba(100, 100, 100, 0.5);
+    position: fixed;
+    top: 0;
+}
+
+/* Style the topnav links */
+.topnav a
+{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+/* Style the footer */
+footer
+{
+    background: rgba(0, 0, 0, 0.5);
+    background: rgba(100, 100, 100, 0.5);
+    bottom: 10;
+    width: 100%;
+    color: #f1f1f1;
+}
+#footericon
+{
+    width:30px;
+    height: 30px;
+}
+#footericon:hover{filter: grayscale(60%);}
+
+/* Style the marquee */
+marquee{border: 3px solid cyan;}
+/* Style the body */
+body
+{
+    background-image: url("logo/bg.png");
+    background-size: 50% 100%;
+    background-color: #53277b;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+p, table{
+	margin: 20px;
+}
+
+
+
+</style>
+	</style>
+</head>
+
+<body><font color=white> 
+
+<div class="topnav">
+	<a href="main.html">Home</a>
+	<a href="#">HTML Tutorial</a>
+	<a href="css_tutor.html"><u>CSS Tutorial</u></a>
+	<a href="#">More...</a>
+	<a href="#">Contact Us</a>
+	<a href="#">Registration</a>
+	<a href="#">LogIn/LogOut</a>
+</div>
+
+
+<br><br><div class="row">
+	<p>We use CSS to styling webpages. We can styling any tags by identifying HTML tags, id name, class name, etc. which is called selector<br>
+	For Example:<br>
+		
+		&emsp; tag_name{}<br>
+		&emsp; .class_name{}<br>
+		&emsp; #id_name{}<br>
+		&emsp; *{}<br>
+		&emsp; tag1_name,tag2_name{}<br>
+		</p>
+
+<table>
+
+  <tr>
+		<th>
+			Property
+		</th>
+		<th>
+			Description
+		</th>
+
+  </tr>
+  <tr>
+		<td>
+			background: transparent;
+		</td>
+		<td>
+			To change background color or image or position or size , etc. (If we use this property for one time only).
+		</td>
+  </tr>
+   <tr>
+		<td>
+			background: rgba(100, 100, 100, 0.5);
+		</td>
+		<td>
+			To change background color by mentioning rgba color model.
+		</td>
+  </tr>
+  		<td>
+			background-image: url("logo/bg.png");
+		</td>
+		<td>
+			To set background image by mentioning image path.
+		</td>
+  </tr>
+       <tr>
+		<td>
+			background-size: 50% 100%;
+		</td>
+		<td>
+			To set heigth and width.
+		</td>
+  </tr>
+       <tr>
+		<td>
+			background-color: #53277b;
+		</td>
+		<td>
+			To change background color.
+		</td>
+  </tr>
+       <tr>
+		<td>
+			background-attachment: fixed;
+		</td>
+		<td>
+			To set background attachment(image or anything) position.
+		</td>
+  </tr>
+   <tr>
+		<td>
+			position: relative;
+		</td>
+		<td>
+			To set position in fixed, relative, etc.
+		</td>
+  </tr>
+   <tr>
+		<td>
+			color: white;
+		</td>
+		<td>
+			To set text color by mentioning color name.
+		</td>
+  </tr>
+     <tr>
+		<td>
+			text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+		</td>
+		<td>
+			To set text shadow and it's color & direction.
+		</td>
+  </tr>
+     <tr>
+		<td>
+			float: left;
+		</td>
+		<td>
+			To set orientation.
+		</td>
+  </tr>
+     <tr>
+		<td>
+			padding: 10px;
+		</td>
+		<td>
+			To set internal margin  by metioning pixel unit or percentage.
+		</td>
+  </tr>
+     <tr>
+		<td>
+			width: 25%;
+		</td>
+		<td>
+			To set width by metioning percentage or pixel unit.
+		</td>
+  </tr>
+     <tr>
+		<td>
+			animation-duration: 10s;
+		</td>
+		<td>
+			To set animation duration.
+		</td>
+  </tr>
+     <tr>
+		<td>
+			border: 3px solid cyan;
+		</td>
+		<td>
+			To set border size, type & color.
+		</td>
+  </tr>
+       <tr>
+		<td>
+			box-sizing: border-box;
+		</td>
+		<td>
+			To set border of content with style.
+		</td>
+  </tr>
+ 
+</table>
+</div>
+
+<center><br><br>
+<footer>SHARE:<BR>
+	<a href="#">
+		<img src="logo/footer/facebook.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="#">
+		<img src="logo/footer/twitter.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="#">
+		<img src="logo/footer/google+.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="#">
+		<img src="logo/footer/linkedin.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="#">
+		<img src="logo/footer/pinterest.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="#">
+		<img src="logo/footer/gmail.png" id="footericon"></a>&nbsp&nbsp&nbsp
+	<a target="_blank" href="#" data-action="share/whatsapp/share">
+		<img src="logo/footer/whatsapp.png" id="footericon"></a><br>
+	<a target="_blank" href="#">
+		<img src="logo/footer/android.png" id="footericon"></a><br>
+	 &copy; 2017-<?php echo date("Y");?> SC Tutorial. All rights reserved.<br><br>
+</footer>
+</font>
+</body>
+</html>

@@ -1,0 +1,6 @@
+1.Create a webpage with a title & heading "Our Solar System". The page should include an image of our solar system having sufficiently large size 
+  and centrally aligned in the page. Apply the concept of image map to this image and accordingly display information regarding the various components
+  of our solar system.
+
+2. Create a form in a webpage to display your personal information in the standardized format. The information should include your name, Father's name,
+   gender, DOB, Address, & Phone Number.There should be a submit & a reset button also with usual functioning.

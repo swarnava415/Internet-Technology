@@ -1,0 +1,2 @@
+1. Create a registration form for registering a user to a recruitment website. The form should contain all possible form elements
+   using which pertinent information can be input.

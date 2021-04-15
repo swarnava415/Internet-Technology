@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>matching or not</title>
+	</head>
+
+	<body>
+	<center>
+		<H1>matching or not</H1>
+		<p><input id="password" type="password" placeholder="Enter Password"/>
+		<p><input id="repassword" type="password" placeholder="Retype Password" />
+		<p><input type="submit" name="submit" value="Submit" onclick="myFunction(this)" /><br><br>
+	</center>
+
+	<script>
+		function myFunction(element) {
+			var password = document.getElementById("password").value;
+			var repassword = document.getElementById("repassword").value;
+			if(password.length>=6){
+				if(repassword==password){
+					alert( "passwords are OK" );
+				}
+				else{
+					alert( "passwords are not matching" );
+				}
+			}
+			else{
+				alert( "minimum 6 character needed" );
+			}
+		}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+<style>
+
+/* animation for H1 */
+H1
+{
+    background-color: transparent;
+    animation-duration: 10s;
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column
+{
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side{width: 25%;}
+
+/* Middle column */
+.column.middle{width: 50%;}
+
+*{box-sizing: border-box;}
+
+/* Clear floats after the columns */
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ /* Style the top navigation bar */
+.topnav
+{
+    background-color: transparent;
+    background: rgba(100, 100, 100, 0.5);
+    position: fixed;
+    top: 0;
+}
+
+/* Style the topnav links */
+.topnav a
+{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+/* Style the footer */
+footer
+{
+    background: rgba(0, 0, 0, 0.5);
+    background: rgba(100, 100, 100, 0.5);
+    bottom: 10;
+    width: 100%;
+    color: #f1f1f1;
+}
+#footericon
+{
+    width:30px;
+    height: 30px;
+}
+#footericon:hover{filter: grayscale(60%);}
+
+/* Style the marquee */
+marquee{border: 3px solid cyan;}
+/* Style the body */
+body
+{
+    background-image: url("logo/bg.png");
+    background-size: 50% 100%;
+    background-color: #53277b;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+</style>

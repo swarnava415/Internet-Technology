@@ -1,0 +1,46 @@
+$a = 0;
+$b = 1;
+$switch = 0;
+my @a = (3..10);
+printf "0 1 ";
+for my $i (@a){
+    $res = $a + $b;
+    printf "$res "; 
+    if($switch){
+        $b = $res;
+        $switch = 0;
+    }
+    else{
+        $a = $res;
+        $switch = 2;
+    }
+}
+
+
+
+
+
+
+
+
+
+$a = 845;
+$b = 98;
+$res = $a+$b;
+printf "result = $res";
+
+
+
+
+
+
+
+
+
+my @a = (1..100);
+for my $i (@a){
+    if($i%4==0){
+        printf "$i\n"; 
+    }
+}
+

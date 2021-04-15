@@ -1,0 +1,14 @@
+my $x = 0;
+my $y = 1;
+my $third = 0;
+my $count;
+print "No. of terms: ";
+my $number = <STDIN>;
+for ($count = 1; $count<=$number; $count++)
+{
+print $x;
+print "\n";
+$third = $x + $y;
+$x = $y;
+$y = $third;
+}
